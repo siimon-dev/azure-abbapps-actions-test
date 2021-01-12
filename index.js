@@ -24,6 +24,10 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/api/v1/health/check', (req, res) => {
+    res.status(200).send('ok');
+});
+
 app.listen(port, () => {
     console.log(`azure-payway-appsvc03 listening at http://localhost:${port}`)
 });
