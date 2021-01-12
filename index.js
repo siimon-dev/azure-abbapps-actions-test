@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
     res.status(200).json({
         'success': 'true',
-        'message': 'stuff happened!'
+        'message': 'stuff happened'
     });
 });
 
